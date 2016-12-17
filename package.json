@@ -1,0 +1,27 @@
+{
+  "name": "andlarweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sardred/andlarweb.git",
+  "author": "Sardred <andelar96@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w",
+    "dev": "webpack-dev-server --inline --hot"
+  },
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "material-ui": "^0.16.5",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-tap-event-plugin": "^2.0.1"
+  }
+}
