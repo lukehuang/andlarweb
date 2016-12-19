@@ -1,7 +1,22 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #123;
-    padding-top: 150px;
+    background-color: #CFD8DC;
     color: white;
     text-align: center;
+    margin: 0;
+}
+
+header {
+
+    margin: 0 auto;
+}
+
+#logo {
+    padding: 15px;
+    background-color: #123;
+}
+
+#logo p {
+    margin: 5px;
+    width: auto;
 }
