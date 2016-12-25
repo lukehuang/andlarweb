@@ -20,7 +20,7 @@ const Nav = () => (
           This is an example tab.
         </p>
         <p>
-          You can put any sort of HTML or react component in here. It even keeps the component state!
+          yo mama can put any sort of HTML or react component in here. It even keeps the component state!
         </p>
       </div>
     </Tab>
