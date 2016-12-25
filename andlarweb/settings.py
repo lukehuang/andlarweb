@@ -53,14 +53,19 @@ WEBPACK_LOADER = {
 # Application definition
 
 INSTALLED_APPS = [
+    # Third party dependency
+    'webpack_loader',
+
+    # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'webpack_loader',
-    'app.articles'
+
+    # Custom apps
+    'app.articles',
 ]
 
 MIDDLEWARE = [
