@@ -19,7 +19,7 @@ class Article(models.Model):
 
     @property
     def slug(self):
-        return slugify(unidecode(self.heading))
+        return slugify(unidecode(self.title))
 
     @permalink
     def get_absolute_url(self):
