@@ -1,4 +1,9 @@
 node_modules/
 .idea/
-dist/
+assets/bundles/
 npm-debug.log
+static/
+__pycache__
+*.pyc
+webpack-stats.json
+db.sqlite3
