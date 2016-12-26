@@ -3,7 +3,7 @@ node_modules/
 assets/bundles/
 npm-debug.log
 static/
-__pycache__
+__pycache__/
 *.pyc
 webpack-stats.json
 db.sqlite3
