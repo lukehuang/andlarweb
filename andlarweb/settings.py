@@ -53,7 +53,8 @@ WEBPACK_LOADER = {
 # Application definition
 
 INSTALLED_APPS = [
-    # Third party dependency
+    # Third party dependencies
+    'rest_framework',
     'webpack_loader',
 
     # Django apps
@@ -67,6 +68,13 @@ INSTALLED_APPS = [
     # Custom apps
     'apps.articles',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAdminUser',
+    ],
+    'PAGE_SIZE': 10
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
