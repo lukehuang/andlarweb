@@ -1,20 +1,23 @@
-var path = require("path")
-var webpack = require('webpack')
-var BundleTracker = require('webpack-bundle-tracker')
+var path = require("path");
+var webpack = require('webpack');
+var BundleTracker = require('webpack-bundle-tracker');
 
 
 module.exports = {
-  context: __dirname,
-  entry: [
+  entry: {
+    hotness: [
       'webpack-dev-server/client?http://localhost:3000',
       'webpack/hot/only-dev-server',
-      './assets/js/index'
-  ],
+    ],
+    index: [
+      './assets/js/index/index',
+    ]
+  },
 
   output: {
-      path: path.resolve('./assets/bundles/'),
-      filename: '[name]-[hash].js',
-      publicPath: 'http://localhost:3000/assets/bundles/',
+    path: path.resolve('./assets/bundles/'),
+    filename: '[name]-[hash].js',
+    publicPath: 'http://localhost:3000/assets/bundles/',
   },
 
   plugins: [
@@ -25,10 +28,10 @@ module.exports = {
 
   module: {
     loaders: [
-      { 
-        test: /\.js?$/, 
-        exclude: /node_modules/, 
-        loaders: ['react-hot', 'babel'], 
+      {
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        loaders: ['react-hot', 'babel'],
       },
     ],
   },
@@ -37,4 +40,4 @@ module.exports = {
     modulesDirectories: ['node_modules'],
     extensions: ['', '.js']
   }
-}
+};
