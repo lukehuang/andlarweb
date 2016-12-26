@@ -14,7 +14,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 class ArticleSerializer(serializers.ModelSerializer):
     absolute_url = serializers.CharField(source='get_absolute_url', read_only=True)
-    author = UserSerializer
+    author = UserSerializer()
 
     class Meta:
         model = Article
