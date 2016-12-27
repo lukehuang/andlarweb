@@ -1,7 +1,8 @@
 {% load render_bundle from webpack_loader %}
 {% load static %}
+
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>andlarweb</title>
@@ -11,9 +12,18 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
   </head>
-  
+
   <body>
-    <div id="app"></div>
-    {% render_bundle 'main' %}
+    <header id="header"></header>
+
+    <main id="main">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer id="footer"></footer>
+
+    {% block render_bundles %}
+      {% render_bundle 'base' %}
+    {% endblock %}
   </body>
 </html>

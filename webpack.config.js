@@ -9,8 +9,14 @@ module.exports = {
       'webpack-dev-server/client?http://localhost:3000',
       'webpack/hot/only-dev-server',
     ],
+    base: [
+      './assets/js/base/index',
+    ],
     index: [
       './assets/js/index/index',
+    ],
+    article: [
+      './assets/js/article/index',
     ]
   },
 
