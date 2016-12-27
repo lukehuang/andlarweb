@@ -1,21 +1,12 @@
+@import url(reset.css);
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     background-color: #CFD8DC;
     color: white;
     text-align: center;
     margin: 0;
-}
-
-header {
-    margin: 0 auto;
-}
-
-#logo {
-    padding: 15px;
-    background-color: #123;
-}
-
-#logo p {
-    margin: 5px;
-    width: auto;
+    min-width: 200px;
 }
