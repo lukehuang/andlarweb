@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-<h1>{{ article.title }}</h1>
-<p>{{ article.ingress }}</p>
-<p>{{ article.content | linebreaks }}</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+
+{% block content %}
+
+{% endblock %}
+
+{% block render_bundles %}
+  {{ block.super }}
+  {% render_bundle 'article' %}
+{% endblock %}
