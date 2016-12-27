@@ -12,7 +12,7 @@ const Main = () => (
   <div style={{
     display: 'flex',
     justifyContent: 'center',
-    padding: '16px 0',
+    padding: '32px 0',
 
   }}>
     <Paper style={style} zDepth={2} />

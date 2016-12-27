@@ -9,8 +9,7 @@ class Main extends Component {
       <div style={{
         display: 'flex',
         justifyContent: 'center',
-        padding: '16px 0',
-
+        padding: '32px 0',
       }}>
         <Articles />
       </div>

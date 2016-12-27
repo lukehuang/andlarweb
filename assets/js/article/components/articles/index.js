@@ -9,5 +9,5 @@ const style = {
 };
 
 const Articles = () => (
-
+  <div></div>
 );

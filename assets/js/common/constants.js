@@ -8,7 +8,7 @@ injectTapEventPlugin();
 
 
 // Changing MuiTheme colors
-const awTheme = getMuiTheme({
+const AW_THEME = getMuiTheme({
   palette: {
     primary1Color: blueGrey500,
     primary2Color: blueGrey700,
@@ -17,4 +17,8 @@ const awTheme = getMuiTheme({
   }
 });
 
-export default awTheme;
+const API_ROOT = '/api/';
+
+const API_ARTICLES = API_ROOT + 'articles/';
+
+export { AW_THEME, API_ARTICLES };
