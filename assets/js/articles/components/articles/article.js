@@ -12,22 +12,8 @@ const cardStyle = {
   textAlign: 'left',
 };
 
-const titleStyle = {
-  fontSize: '200%',
-  fontWeight: '500',
-  marginBottom: '16px',
-};
-
-const ingressStyle = {
-  fontStyle: 'italic',
-  fontSize: '125%',
-  fontWeight: '300',
-  marginBottom: '8px',
-};
-
 const contentStyle = {
   whiteSpace: 'pre',
-  lineHeight: '1.25'
 };
 
 
