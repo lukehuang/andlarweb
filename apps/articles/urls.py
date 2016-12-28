@@ -5,6 +5,9 @@ from apps.articles import views
 
 
 urlpatterns = [
+    # URL used for previewing all articles
+    url(r'', views.articles),
+
     # URL used for individual article display
     url(r'^(?P<article_id>\d+)/(?P<article_slug>[a-zA-Z0-9_-]+)/$', views.details, name='article_details'),
 ]

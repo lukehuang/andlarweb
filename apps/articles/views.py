@@ -11,6 +11,11 @@ class ArticleViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerializer
 
 
+def articles(request):
+    article_objects = Article.objects.order_by('-created')
+    return render(request, 'articles/articles.html', {'articles': article_objects})
+
+
 def details(request, article_id, article_slug):
 
     # Get the article based on its id
