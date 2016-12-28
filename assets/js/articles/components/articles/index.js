@@ -13,6 +13,7 @@ const apiArticlesToArticles = article => ({
   articleUrl: article.absolute_url,
   title: article.title,
   ingress: article.ingress,
+  content: article.content,
 });
 
 class ArticlesContainer extends Component {
