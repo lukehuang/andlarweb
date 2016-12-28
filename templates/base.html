@@ -23,6 +23,7 @@
     <footer id="footer"></footer>
 
     {% block render_bundles %}
+      {% render_bundle 'vendor' %}
       {% render_bundle 'base' %}
     {% endblock %}
   </body>
