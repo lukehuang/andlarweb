@@ -5,6 +5,8 @@ import Articles from "./articles"
 
 const apiArticlesToArticles = article => ({
   articleUrl: article.absolute_url,
+  author: article.author,
+  created: article.created,
   title: article.title,
   ingress: article.ingress,
   content: article.content,
