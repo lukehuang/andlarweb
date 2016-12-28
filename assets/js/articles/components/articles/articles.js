@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Article from "./article";
-
+import muiThemeable from 'material-ui/styles/muiThemeable';
 
 
 const Articles = props => (
@@ -12,10 +12,10 @@ const Articles = props => (
     }}>
     {
       props.articles.map((article, index) =>
-        <Article {...article} key={index} />
+        <Article {...article} key={index} muiTheme={props.muiTheme} />
       )
     }
   </div>
 );
 
-export default Articles;
+export default muiThemeable()(Articles);
