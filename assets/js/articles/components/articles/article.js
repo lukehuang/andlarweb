@@ -40,12 +40,12 @@ class Article extends Component {
         <CardHeader
           title={this.props.author.first_name + " " + this.props.author.last_name}
           subtitle={this.props.created}
-          avatar="images/0.png"
+          avatar="/static/img/0.png"
         />
         <CardMedia
           overlay={<CardTitle title={this.props.title} />}
         >
-          <img src="/images/1.jpg" />
+          <img src={"/static/img/" + this.props.id + ".jpg"} />
         </CardMedia>
         <CardTitle subtitle={this.props.ingress} />
         <Divider />
