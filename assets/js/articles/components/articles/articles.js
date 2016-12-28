@@ -6,7 +6,8 @@ import Article from "./article";
 const Articles = props => (
   <div style={{
       display: 'flex',
-      justifyContent: 'center',
+      flexDirection: 'column',
+      alignItems: 'center',
       padding: '32px 0 16px',
     }}>
     {
