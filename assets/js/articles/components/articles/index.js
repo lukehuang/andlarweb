@@ -2,12 +2,6 @@ import React, {Component} from "react";
 import { API_ARTICLES } from "../../../common/constants";
 import Articles from "./articles"
 
-const style = {
-  height: 1024,
-  width: '64%',
-  textAlign: 'center',
-  display: 'inline-block',
-};
 
 const apiArticlesToArticles = article => ({
   articleUrl: article.absolute_url,
@@ -28,8 +22,7 @@ class ArticlesContainer extends Component {
   }
 
   fetchArticles() {
-    let apiUrl = API_ARTICLES;
-    fetch(apiUrl, {credentials: 'same-origin'})
+    fetch(API_ARTICLES, {credentials: 'same-origin'})
     .then(response => response.json())
     .then((json) => {
       this.setState({
