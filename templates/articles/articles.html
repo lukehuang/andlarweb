@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+
+{% block content %}
+
+{% endblock %}
+
+{% block render_bundles %}
+  {{ block.super }}
+  {% render_bundle 'articles' %}
+{% endblock %}
