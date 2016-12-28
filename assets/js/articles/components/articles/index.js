@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import API_ARTICLE from "../../../common/constants";
+import Articles from "./articles"
 
 const style = {
   height: 1024,
@@ -25,6 +27,7 @@ class ArticlesContainer extends Component {
   }
 
   fetchArticles() {
+    let apiUrl = API_ARTICLE
     fetch(apiUrl, {credentials: 'same-origin'})
     .then(response => response.json())
     .then((json) => {
