@@ -11,7 +11,7 @@ const Articles = props => (
     }}>
     {
       props.articles.map((article, index) =>
-        <Article article={article} key={index} />
+        <Article {...article} key={index} />
       )
     }
   </div>

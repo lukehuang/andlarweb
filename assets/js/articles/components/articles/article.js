@@ -7,11 +7,11 @@ const style = {
   marginBottom: '16px',
 };
 
-const Article = (article) => (
+const Article = ({ articleUrl, title, ingress, content }) => (
   <Paper style={style} zDepth={2}>
-    <h1>{article.title}</h1>
-    <p><i>{article.ingress}</i></p>
-    <p>{article.content}</p>
+    <h1>{title}</h1>
+    <p>{ingress}</p>
+    <p>{content}</p>
   </Paper>
 );
 
