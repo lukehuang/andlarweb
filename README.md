@@ -5,4 +5,4 @@ It's a serious work in progress, and it's mostly a learning experience, but this
 
 I've just barely begun, so it'll be a good little while until I push this stuff out to a production version. Not really keeping any sensitive data around here anyways, but I imagine I'll make a whole lot of mistakes, like uploading the entire database or something.
 
-Half the code is shamelessly copy-pasted from [OW4](https://github.com/dotKom/onlineweb4), and oh my goodness am I glad I can rely on dotkom for guidance.
+Half the code is shamelessly copy-pasted from [OW4](https://github.com/dotKom/onlineweb4), and oh my goodness am I glad I can rely on [dotkom](https://github.com/dotKom) for guidance.
