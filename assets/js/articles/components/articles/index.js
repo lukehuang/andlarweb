@@ -5,12 +5,12 @@ import Articles from "./articles"
 
 const apiArticlesToArticles = article => ({
   articleUrl: article.absolute_url,
-  id: article.id,
   author: article.author,
   created: article.created,
   title: article.title,
   ingress: article.ingress,
   content: article.content,
+  image: article.image,
 });
 
 class ArticlesContainer extends Component {

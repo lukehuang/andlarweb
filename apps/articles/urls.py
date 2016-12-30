@@ -8,7 +8,7 @@ urlpatterns = [
     # URL used for previewing all articles
     url(r'', views.articles),
 
-    # URL used for individual article display
+    # URL used for individual article display, doesn't really work right now.
     url(r'^(?P<article_id>\d+)/(?P<article_slug>[a-zA-Z0-9_-]+)/$', views.details, name='article_details'),
 ]
 

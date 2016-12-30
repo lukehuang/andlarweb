@@ -11,8 +11,9 @@ class Article(models.Model):
     author = models.ForeignKey(User)
     created = models.DateTimeField(auto_now_add=True, editable=False)
     title = models.CharField(max_length=50)
-    ingress = models.TextField(max_length=100, blank=True)
+    ingress = models.TextField(max_length=100)
     content = models.TextField()
+    image = models.TextField(default='1.jpg')
 
     def __str__(self):
         return self.title

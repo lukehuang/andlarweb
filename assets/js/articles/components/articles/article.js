@@ -45,7 +45,7 @@ class Article extends Component {
         <CardMedia
           overlay={<CardTitle title={this.props.title} />}
         >
-          <img src={"/static/img/" + ((this.props.id % 5) + 1) + ".jpg"} />
+          <img src={"/static/img/" + this.props.image} />
         </CardMedia>
         <CardTitle subtitle={this.props.ingress} style={allowNewLine} />
         <Divider />

@@ -26,4 +26,5 @@ class ArticleSerializer(serializers.ModelSerializer):
             'title',
             'ingress',
             'content',
+            'image',
         )
