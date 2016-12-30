@@ -1,6 +1,6 @@
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import injectTapEventPlugin from "react-tap-event-plugin";
-import {amber500, blueGrey500, blueGrey700} from "material-ui/styles/colors";
+import {blue500, blueGrey500, blueGrey700} from "material-ui/styles/colors";
 
 
 // Needed for onTouchTap()
@@ -12,7 +12,7 @@ const AW_THEME = getMuiTheme({
   palette: {
     primary1Color: blueGrey500,
     primary2Color: blueGrey700,
-    accent1Color: amber500,
+    accent1Color: blue500,
     pickerHeaderColor: blueGrey500
   }
 });

@@ -12,7 +12,7 @@ const cardStyle = {
   textAlign: 'left',
 };
 
-const contentStyle = {
+const allowNewLine = {
   whiteSpace: 'pre',
 };
 
@@ -45,11 +45,11 @@ class Article extends Component {
         <CardMedia
           overlay={<CardTitle title={this.props.title} />}
         >
-          <img src={"/static/img/" + this.props.id + ".jpg"} />
+          <img src={"/static/img/" + ((this.props.id % 5) + 1) + ".jpg"} />
         </CardMedia>
-        <CardTitle subtitle={this.props.ingress} />
+        <CardTitle subtitle={this.props.ingress} style={allowNewLine} />
         <Divider />
-        <CardText expandable={true} style={contentStyle}>
+        <CardText expandable={true} style={allowNewLine}>
           {this.props.content}
         </CardText>
         <Divider />
