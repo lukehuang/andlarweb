@@ -38,7 +38,7 @@ class Article extends Component {
     return (
       <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange} style={cardStyle}>
         <CardHeader
-          title={this.props.author.first_name + " " + this.props.author.last_name}
+          title={this.props.author}
           subtitle={this.props.created}
           avatar="/static/img/0.png"
         />
