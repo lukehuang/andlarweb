@@ -11,7 +11,7 @@ module.exports = {
       'webpack/hot/only-dev-server',
     ],
     vendor: [
-      'es6-promise', 'isomorphic-fetch',
+      'es6-promise', 'isomorphic-fetch', 'moment'
     ],
     base: [
       './assets/js/base/index',

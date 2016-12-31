@@ -1,12 +1,13 @@
 import React, {Component} from "react";
 import { API_ARTICLES } from "../../../common/constants";
-import Articles from "./articles"
+import Articles from "./articles";
+import moment from "moment";
 
 
 const apiArticlesToArticles = article => ({
   articleUrl: article.absolute_url,
   author: article.author.first_name + ' ' + article.author.last_name,
-  created: new Date(article.created).toUTCString(),
+  created: moment(article.created).format('D/MM/YYYY H:mm:ss'),
   title: article.title,
   ingress: article.ingress,
   content: article.content,
