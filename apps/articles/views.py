@@ -7,7 +7,7 @@ from apps.articles.serializers import ArticleSerializer
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
-    queryset = Article.objects.all()
+    queryset = Article.objects.all().order_by('-created')
     serializer_class = ArticleSerializer
 
 
