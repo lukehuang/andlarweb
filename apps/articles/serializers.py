@@ -4,11 +4,17 @@ from apps.articles.models import Article
 
 
 class UserSerializer(serializers.ModelSerializer):
+    avatar = serializers.SerializerMethodField()
+
+    def get_avatar(self, instance):
+        return instance.awuser.avatar.url
+
     class Meta:
         model = User
         fields = (
             'first_name',
             'last_name',
+            'avatar',
         )
 
 

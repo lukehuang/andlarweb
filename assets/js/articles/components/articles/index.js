@@ -7,6 +7,7 @@ import moment from "moment";
 const apiArticlesToArticles = article => ({
   articleUrl: article.absolute_url,
   author: article.author.first_name + ' ' + article.author.last_name,
+  avatar: article.author.avatar,
   created: moment(article.created).format('DD/MM/YYYY H:mm:ss'),
   title: article.title,
   ingress: article.ingress,

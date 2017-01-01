@@ -41,7 +41,7 @@ class Article extends Component {
         <CardHeader
           title={this.props.author}
           subtitle={this.props.created}
-          avatar="/static/img/0.png"
+          avatar={this.props.avatar}
         />
         <CardMedia
           overlay={<CardTitle title={this.props.title} />}
