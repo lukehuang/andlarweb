@@ -71,6 +71,7 @@ INSTALLED_APPS = [
 
     # Custom apps
     'apps.articles',
+    'apps.authentication',
 ]
 
 REST_FRAMEWORK = {
