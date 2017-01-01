@@ -8,7 +8,8 @@ from django.contrib.auth.models import User
 
 
 def image_path(instance, filename):
-    return 'articles/{}'.format(instance.id)
+    extension = filename.split('.')[-1]
+    return 'articles/{}.{}'.format(instance.id, extension)
 
 
 class Article(models.Model):
