@@ -5,7 +5,7 @@ from apps.articles import views
 
 
 urlpatterns = [
-    # URL used for previewing all articles
+    # Overview for all articles
     url(r'', views.articles),
 
     # URL used for individual article display, doesn't really work right now.
