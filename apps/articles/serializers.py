@@ -15,6 +15,10 @@ class UserSerializer(serializers.ModelSerializer):
 class ArticleSerializer(serializers.ModelSerializer):
     absolute_url = serializers.CharField(source='get_absolute_url', read_only=True)
     author = UserSerializer()
+    image = serializers.SerializerMethodField()
+
+    def get_image(self, instance):
+        return instance.image.url
 
     class Meta:
         model = Article
