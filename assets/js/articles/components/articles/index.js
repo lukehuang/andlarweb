@@ -11,7 +11,7 @@ const apiArticlesToArticles = article => ({
   title: article.title,
   ingress: article.ingress,
   content: article.content,
-  image: article.image.path,
+  image: article.image,
 });
 
 class ArticlesContainer extends Component {
