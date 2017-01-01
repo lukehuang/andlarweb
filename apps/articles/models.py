@@ -7,13 +7,17 @@ from unidecode import unidecode
 from django.contrib.auth.models import User
 
 
+def image_path(instance, filename):
+    return 'articles/{}'.format(instance.id)
+
+
 class Article(models.Model):
     author = models.ForeignKey(User)
     created = models.DateTimeField(auto_now_add=True, editable=False)
     title = models.CharField(max_length=50)
     ingress = models.TextField(max_length=100)
     content = models.TextField()
-    image = models.TextField(default='1.jpg')
+    image = models.ImageField(upload_to=image_path)
 
     def __str__(self):
         return self.title
