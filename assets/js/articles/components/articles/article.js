@@ -8,6 +8,7 @@ import * as _colorManipulator from "material-ui/utils/colorManipulator";
 const cardStyle = {
   height: 'auto',
   width: '50%',
+  minWidth: '256px',
   marginBottom: '16px',
   textAlign: 'left',
 };
