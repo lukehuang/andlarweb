@@ -43,12 +43,10 @@ class Article extends Component {
           subtitle={this.props.created}
           avatar={this.props.avatar}
         />
-        <CardMedia
-          overlay={<CardTitle title={this.props.title} />}
-        >
+        <CardMedia>
           <img src={this.props.image} />
         </CardMedia>
-        <CardTitle subtitle={this.props.ingress} style={allowNewLine} />
+        <CardTitle title={this.props.title} subtitle={this.props.ingress} style={allowNewLine} />
         <Divider />
         <CardText expandable={true} style={allowNewLine}>
           {this.props.content}
