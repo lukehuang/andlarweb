@@ -1,4 +1,20 @@
 # andlarweb
+
+You like packages?
+`yarn install`
+
+I sure do like packages.
+`pip install -r requirements.txt`
+
+First time? How about some migrations?
+`python manage.py migrate`
+
+Run the server locally with...
+`python manage.py runserver 0.0.0.0:8000`
+
+Run the client side with...
+`yarn run server`
+
 Website built on Django, React, Webpack and Material UI
 
 It's a serious work in progress, and it's mostly a learning experience, but this is what will culminate into my first website that doesn't consist of 99% Lorem Ipsum.
