@@ -8,7 +8,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w",
-    "dev": "webpack-dev-server --inline --hot"
+    "dev": "webpack-dev-server --inline --hot",
+    "server": "node server.js --inline"
   },
   "devDependencies": {
     "babel-core": "^6.20.0",
